@@ -1,0 +1,28 @@
+:root{--bg:#f4f5f7;--fg:#111;--card:#fff;--bd:#d9dce1;--ac:#1d9bf0}
+@media(prefers-color-scheme:dark){:root{--bg:#0d0f12;--fg:#eee;--card:#181b20;--bd:#2c3037}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.4 system-ui,-apple-system,sans-serif}
+main{max-width:560px;margin:0 auto;padding:16px}
+h1{font-size:24px;margin:8px 0 4px}.sub,.note{color:#8b929c}.note{font-size:13px}
+.row{display:flex;gap:8px;margin:14px 0}
+input,select{flex:1;padding:12px;border-radius:10px;border:1px solid var(--bd);background:var(--card);color:var(--fg);font:inherit;min-width:0}
+button,.btn{background:var(--ac);color:#fff;border:0;border-radius:999px;padding:11px 18px;font:600 15px inherit;cursor:pointer;text-decoration:none;display:block;text-align:center;width:100%;margin-top:8px}
+button:disabled{opacity:.6}.row button{width:auto;margin:0}
+.alt{background:transparent;color:var(--ac);border:1px solid var(--ac)}
+.err{color:#e0245e;margin:8px 0}
+#tw{--tb:#fff;--tf:#0f1419;--ts:#536471;--tl:#eff3f4;padding:16px;border-radius:16px;background:var(--tb);color:var(--tf);border:1px solid var(--tl)}
+#tw.dim{--tb:#15202b;--tf:#f7f9f9;--ts:#8b98a5;--tl:#38444d}
+#tw.dark{--tb:#000;--tf:#e7e9ea;--ts:#71767b;--tl:#2f3336}
+.h{display:flex;gap:10px;align-items:center}
+.av{width:44px;height:44px;border-radius:50%;object-fit:cover}
+.nm{font-weight:700}.hd{color:var(--ts);font-size:14px}
+.tx{font-size:18px;line-height:1.35;margin:12px 0;white-space:pre-wrap;word-wrap:break-word}
+.md{display:grid;gap:2px;border-radius:14px;overflow:hidden;border:1px solid var(--tl);margin-bottom:12px;position:relative}
+.md.two{grid-template-columns:1fr 1fr}.md img{display:block;width:100%;height:100%;object-fit:cover}
+.pl{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
+.pl span{width:60px;height:60px;border-radius:50%;background:rgba(0,0,0,.6);color:#fff;display:flex;align-items:center;justify-content:center;font-size:24px;padding-left:4px}
+.dt{color:var(--ts);font-size:14px;padding-bottom:12px}
+.st{display:flex;gap:16px;padding-top:12px;border-top:1px solid var(--tl);color:var(--ts);font-size:14px;flex-wrap:wrap}.st b{color:var(--tf)}
+.out img{width:100%;border-radius:12px;margin-top:12px}
+
+.chips{display:flex;flex-wrap:wrap;gap:6px 14px;margin:14px 0 0;font-size:14px}.chips label{display:flex;align-items:center;gap:5px}
